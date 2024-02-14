@@ -13,19 +13,19 @@
 <body class="">
     <main class="min-h-screen bg-[#010313] bg-[url(../images/background.png)] bg-no-repeat bg-center">
         <!-- Home Screen -->
-        <section class="home min-h-screen flex justify-center items-center hidden">
+        <section id="home-screen" class=" min-h-screen flex justify-center items-center">
             <div class="flex flex-col items-center gap-10">
                 <h1 class="text-9xl text-white font-extrabold font-anton">ALPHABET CLASH</h1>
                 <p class="text-xl text-white font-poppins">Unleash Your Keyboard Kung Fu : Press “Enter” to Play</p>
-                <button
+                <button onclick="play()"
                     class="btn hover:text-white hover:bg-gradient-to-r from-purple-500 to-pink-500 text-xl font-poppins">Play
                     Now</button>
+
             </div>
         </section>
 
-
         <!-- play ground start -->
-        <section class="play-ground ">
+        <section id="play-ground" class="hidden">
 
             <div class="flex flex-col items-center gap-20 pt-10">
                 <div
@@ -90,8 +90,8 @@
             </div>
         </section>
 
-
-        <section class="score flex justify-center items-center min-h-screen hidden">
+        <!-- Score -->
+        <section class="score hidden flex justify-center items-center min-h-screen">
 
             <div class="text-white font-poppins space-y-6 bg-[#FFFFFF33] p-6 text-center rounded-lg">
                 <h1 class="text-5xl font-bold">Score : <span class="">14</span></h1>
@@ -101,7 +101,12 @@
             </div>
 
         </section>
+        <p class="text-white text-center -mt-16">Copyright © 2024 - All right reserved
+            by HASIB
+        </p>
     </main>
+    <script src="./utility.js"></script>
+    <script src="./script.js"></script>
 
 </body>
 
